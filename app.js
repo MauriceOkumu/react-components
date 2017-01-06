@@ -28,6 +28,8 @@ class GroceryListItem extends React.Component{
     var style = {
       textDecoration: this.state.done ? 'line-through' : 'none',
       color:this.state.done ? 'blue' : 'red',
+      fontFamily: 'lucida grande',  
+      fontSize: 20
 
     };
 		return (
@@ -53,3 +55,4 @@ var GroceryList = (props) => (
 
 
 ReactDOM.render(<GroceryList item={groceries}  />,document.getElementById("app"));
+
