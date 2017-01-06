@@ -1,10 +1,21 @@
 // TODO
 
+
+var Kale = () => (
+    <div>Item 1 kale is rendering</div>
+	);
+
+
+var Cucumber = () => (
+	<div>Item 2 cucumber is rendering</div>
+	);
+
 var GroceryList = () => (
      <ul>ITEMS
-     	<li>Item 1 is rendering</li>
-     	<li>Item 2 is rendering</li>
+     	<Kale />
+     	<Cucumber />     
      </ul>
 	);
+
 
 ReactDOM.render(<GroceryList />,document.getElementById("app"));
